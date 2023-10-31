@@ -1,0 +1,39 @@
+{
+  "name": "@enymo/react-better-context",
+  "version": "0.0.0",
+  "description": "Wrapper for react contexts to reduce boilerplate code",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "tsup": {
+    "entry": [
+      "src/js/index.ts"
+    ],
+    "format": [
+      "esm",
+      "cjs"
+    ],
+    "dts": true
+  },
+  "scripts": {
+    "build": "tsup"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enymo/react-better-context.git"
+  },
+  "author": "enymo GmbH",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=17.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.33",
+    "postcss": "^8.4.17",
+    "tsup": "^6.2.2",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "@enymo/ts-nullsafe": "^1.0.0"
+  }
+}
